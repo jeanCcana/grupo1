@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/productos.css" />
+    <title>Promociones - Game Zone</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <button class="btn btn-burguer">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../imagenes/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="menu">
+            <button class="btn btn-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu-links">
+                <li>
+                    <a href="../pages/categorias.html">CATEGORÍAS</a>
+                </li>
+                <li>
+                    <a href="../pages/productos.html" class="active">PRODUCTOS</a>
+                </li>
+                <li>
+                    <a href="../pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="../pages/blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="../pages/contactos.html">CONTACTOS</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="user">
+            <div class="user-img">
+                <img src="../imagenes/user.webp" alt="user">
+            </div>
+            <span class="user-name">JEAN</span>
+            <div class="user-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <!-- Main -->
+    <main>
+        <div class="banner">
+            <img src="../imagenes/productos/banner.jpg" alt="">
+        </div>
+        <div class="container">
+            <h1 class="container-title">Productos</h1>
+            <div class="container-content">
+                <aside class="sidebar">
+                    <div class="aside-title">
+                        <button class="btn btn-sidebar-close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h5>Total de artículos</h5>
+                        <span>Artículos 1-12 de 34</span>
+                    </div>
+                    <div class="aside-content">
+                        <h5>Categorías</h5>
+                        <div class="aside-separator"></div>
+                        <h4>Juegos</h4>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                        </ul>
+                        <div class="aside-separator"></div>
+                        <h4>Plataformas</h4>
+                        <ul class="aside-list">
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 1
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 2
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 3
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 4
+                            </li>
+                        </ul>
+                        <div class="aside-separator"></div>
+                        <h4>Périfericos</h4>
+                        <ul class="aside-list">
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 1
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 2
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 3
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 4
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="products-container">
+                    <div class="products-bar">
+                        <button class="btn btn-filter">
+                            <i class="fa-solid fa-filter"></i>
+                            Filtrar
+                        </button>
+                        <input class="search" type="text" placeholder="Buscar " />
+                        <div class="products-selector">
+                            <span>Ordenar por:</span>
+                            <span>Más vendido</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="items-grid">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo1.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                PlayStation 5 Consola - Edición Digital
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 3149.90</span>
+                                <span class="old-price">S/ 3499.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo2.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Game & Watch: The Legend of Zelda
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 329.90</span>
+                                <span class="old-price">S/ 379.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo3.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Nintendo Switch Consola (Joy-Con Rojo/Azul Neón)
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 1899.90</span>
+                                <span class="old-price">S/ 2099.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo4.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Nintendo Switch OLED White + FIFA 22
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 2499.90</span>
+                                <span class="old-price">S/ 2749.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo5.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Horizon Forbidden West (PS4)
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 299.90</span>
+                                <span class="old-price">S/ 369.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo6.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Elden Ring (PS5)
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 249.90</span>
+                                <span class="old-price">S/ 319.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo7.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Silla Gamer T-Dagger LZ-AK-1 – Azul
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 699.90</span>
+                                <span class="old-price">S/ 999.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo8.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Silla Gamer T-Dagger LZ-AK-1 – Negro
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 699.90</span>
+                                <span class="old-price">S/ 999.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo9.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Hyperx Pulsefire Surge
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 219.90</span>
+                                <span class="old-price">S/ 299.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo10.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Logitech G213 RGB Prodigy
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 254.90</span>
+                                <span class="old-price">S/ 299.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo11.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                Turtle Beach Recon 200
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 99.90</span>
+                                <span class="old-price">S/ 199.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="../imagenes/productos/promo12.jpeg" alt="" />
+                            </div>
+                            <h4>
+                                HyperX Alloy Origins Core - Blue Clicky
+                            </h4>
+                            <div class="prices">
+                                <span class="new-price">S/ 399.90</span>
+                                <span class="old-price">S/ 539.90</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn">Añadir al carrito </button>
+                                <button class="btn"> <i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="btn">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button class="btn active">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top-items">
+                <div>
+                    <div class="footer-logo">
+                        <img src="../imagenes/logo.png" alt="logo">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus tempore odio molestiae.
+                    </p>
+                </div>
+                <div>
+                    <h3>Lorem</h3>
+                    <ul>
+                        <li>Proin a augue</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Donec eget feugiat</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Lorem</h3>
+                    <ul>
+                        <li>Donec eget magna</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Curabitur eu dui</li>
+                        <li>Vestibulum accumsan lectus</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contactos</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i>user@certus.edu.pe</li>
+                        <li><i class="fas fa-phone"></i>+51 944410507</li>
+                        <li><i class="fas fa-map-pin"></i>Lorem ipsum dolor sit amet consectetur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-items">
+                <div>
+                    <span>&copy; 2022 Todos los derechos Reservados</span>
+                </div>
+                <div>
+                    <span>Términos & Condiciones</span>
+                    <span>|</span>
+                    <span>Política de Privancidad</span>
+                    <span>|</span>
+                    <span>Mapa</span>
+                    <span>|</span>
+                    <span>Reclamos</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/8623e989f7.js" crossorigin="anonymous"></script>
+    <script src="../js/general.js"></script>
+    <script src="../js/productos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  height: 120%;
+  margin: 0;
+  padding: 0;
+}
+.parallax {
+  background: rgb(6, 26, 51) fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+ul {
+  list-style: none;
+}
+#menu li > a {
+  background-color: rgb(13, 13, 112);
+  color: aliceblue;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+#menu li > a.hover {
+  color: black;
+  background-color: aliceblue;
+}
+#menu li {
+  float: left;
+  text-align: center;
+}
+#menu li > ul {
+  display: none;
+}
+#menu li:hover > ul {
+  display: block;
+}
+#gamezone {
+  width: 100%;
+  height: 55%;
+  font-size: 20px;
+  background-image: url("../imagenes/blog/gamesfnd.png");
+  color: aliceblue;
+}
+#tiendaconsolas {
+  width: 100%;
+  height: 15%;
+  font-size: 50px;
+  background-color: rgb(0, 0, 255);
+}
+#ps5 {
+  width: 100%;
+  height: 115%;
+  background-image: url("../imagenes/ps5background.png");
+  color: aliceblue;
+  font-size: 20px;
+  font-style: normal;
+}
+#ps4 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../imagenes/blog/ps4background.jpg");
+  color: aliceblue;
+  font-size: 20px;
+  font-style: normal;
+}
+#xboxseriesx {
+  width: 100%;
+  height: auto;
+  background-image: url("../imagenes/blog/xboxseriesxbackground.png");
+  color: greenyellow;
+  font-size: 20px;
+  font-style: normal;
+}
+#nintendoswitch {
+  width: 100%;
+  height: auto;
+  background-image: url("../imagenes/blog/nitendoswitchbackground.jpg");
+  color: aqua;
+  font-size: 20px;
+  font-style: normal;
+}
+#tiendajuegos {
+  width: 100%;
+  height: 15%;
+  color: aliceblue;
+  font-size: 50px;
+  background-color: red;
+}
+h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+#mk11 {
+  width: 100%;
+  height: 115%;
+  background-image: url("../imagenes/blog/Mk11fnd.jpg");
+  color: yellow;
+  font-size: 20px;
+  font-style: normal;
+}
+#smbu {
+  width: 100%;
+  height: 128%;
+  background-image: url("../imagenes/blog/smbufnd.jpg");
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: normal;
+}
+#gtav {
+  width: 100%;
+  height: auto;
+  background-image: url("../imagenes/blog/gtavfnd.jpg");
+  color: darkgreen;
+  font-size: 20px;
+  font-style: normal;
+}
+#cuphead {
+  width: 100%;
+  height: 110%;
+  background-image: url("../imagenes/blog/cupheadfnd.jpg");
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  font-style: normal;
+}
+#cbnst {
+  width: 100%;
+  height: auto;
+  background-image: url("../imagenes/blog/cbnstfnd.jpg");
+  color: chocolate;
+  font-size: 20px;
+  font-style: normal;
+}
+#mhaoj2 {
+  background-image: url("../imagenes/blog/mhaoj2fnd.jpg");
+  color: red;
+  font-size: 20px;
+  font-style: normal;
+}
+#gtatde {
+  width: 100%;
+  height: auto;
+  background-image: url("../imagenes/blog/gtatdefnd.jpg");
+  color: aliceblue;
+  font-size: 20px;
+}
+#codv {
+  background-image: url("../imagenes/blog/codvfnd.jpg");
+  color: antiquewhite;
+  font-size: 20px;
+}
+.videos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
