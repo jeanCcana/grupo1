@@ -194,14 +194,19 @@ input[type="checkbox"] {
 }
 
 .product-item .new-price,
+.product-item .price,
 .product-item .old-price {
   font-size: 0.95rem;
   white-space: nowrap;
 }
 
+.product-item .new-price,
+.product-item .price {
+  font-weight: 600;
+}
+
 .product-item .new-price {
   color: var(--primary-color);
-  font-weight: 600;
 }
 
 .product-item .old-price {
@@ -217,7 +222,7 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-.product-img::after {
+.product-img.offer::after {
   position: absolute;
   content: "OFERTA";
   top: 0.1rem;
