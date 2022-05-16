@@ -11,23 +11,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Game Zone</title>
 </head>
 
 <body>
-    <main id="hero">
-        <div class="promo">
+    <div class="video-wrapper">
+        <video playsinline autoplay muted loop poster="cake.jpg">
+            <source src="./imagenes/halo.mp4" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header">
             <h1>¿Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis placeat?</h1>
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga officia provident
                 veniam explicabo blanditiis ullam.</p>
-            <button type="button"><a href="./pages/categorias.html">CLICK AQUI</button></a>
+            <a href="./pages/categorias.html">
+                <span>START</span>
+            </a>
         </div>
-        <video muted autoplay loop>
-            <source src="./imagenes/halo.mp4" type="video/mp4">
-        </video>
-        <div class="capa"></div>
-    </main>
+    </div>
 </body>
 
 </html>
