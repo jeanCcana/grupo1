@@ -92,7 +92,7 @@ a:after {
   content: "";
   position: absolute;
   inset: 4px;
-  background: #1a1a40;
+  background: #101027;
 }
 a:hover:after {
   background: var(--clr);
