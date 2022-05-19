@@ -179,6 +179,11 @@ input[type="checkbox"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+}
+
+.product-item:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 .product-item h4 {
@@ -216,10 +221,17 @@ input[type="checkbox"] {
 
 .product-img {
   position: relative;
+  overflow: hidden;
 }
 
 .product-img img {
   width: 100%;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.product-img:hover img {
+  transform: scale(1.05);
 }
 
 .product-img.offer::after {
