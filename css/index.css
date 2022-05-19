@@ -1,113 +1,97 @@
-:root {
-  --clr: #50dd49;
-  --1: 0;
-}
-
 body {
   margin: 0;
 }
 
 video {
-  object-fit: cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.video-wrapper {
-  width: 100vw;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-.header {
-  position: relative;
-  background: rgba(0, 0, 0, 0.314);
-  height: 100%;
+.content {
+  background: rgba(0, 0, 0, 0.542);
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   text-align: center;
   color: white;
 }
 
-.header h1 {
+.content h1 {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 1rem;
+  font-size: 3.2rem;
 }
 
-.header p {
+.content p {
   font-size: 1rem;
   font-weight: 200;
+  font-size: 1.1rem;
+  letter-spacing: 7px;
 }
 
-a {
+.button-rainbow {
+  margin: 0 auto;
+  width: 14rem;
+  text-align: center;
   position: relative;
-  padding: 20px 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #1a1a40;
-  text-decoration: none;
-  transition: 1s;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-sizing: border-box;
   overflow: hidden;
-  -webkit-box-reflect: below 1px
-    linear-gradient(transparent, transparent, #0004);
-}
-a:hover {
-  background: var(--clr);
-  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr),
-    0 0 100px var(--clr);
-}
-a:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 400%;
-  background: var(--clr);
-  transition: 1s;
-  animation: animate 2s linear infinite;
-  animation-delay: calc(0.33s * var(--1));
-}
-a:hover:before {
-  width: 120%;
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  padding: 3px;
+  transition: 0.25s;
 }
 
-a:after {
+.button-rainbow:hover,
+.button-rainbow:focus {
+  transform: scale(1.1);
+}
+
+.button-rainbow:hover::before {
+  animation: animation 0.5s linear infinite;
+}
+
+.button-rainbow::before {
   content: "";
   position: absolute;
-  inset: 4px;
-  background: #101027;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(115deg, #4fcf70, #fad648, #44ce7b);
+  background-size: 50% 100%;
+  animation: animation 2s linear infinite;
 }
-a:hover:after {
-  background: var(--clr);
-}
-a span {
+
+.button-rainbow span {
+  display: block;
   position: relative;
-  z-index: 1;
-  font-size: 2em;
-  color: #fff;
-  opacity: 0.5;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  transition: 0.5s;
+  height: 100%;
+  background: #0f0f28;
+  color: #878793;
+  border-radius: 3px;
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 6px;
+  font-weight: 400;
+  transition: 0.25s;
 }
-a:hover span {
-  opacity: 1;
+
+.button-rainbow:hover span {
+  color: white;
+}
+
+@keyframes animation {
+  to {
+    transform: translateX(-50%);
+  }
 }
