@@ -1,45 +1,66 @@
+html {
+  color: white;
+}
+
 main {
   background-color: #151719;
 }
+
+marquee {
+  padding: 1.5rem;
+}
+
+marquee h2 {
+  color: white;
+  letter-spacing: 1rem;
+}
+
+main .container {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+main .container div {
+  text-align: center;
+}
+
+main .container span {
+  display: block;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
 h1 {
-  font: size 60px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
   color: rgb(192, 53, 83);
-  text-align: center;
+  margin-bottom: 0.5rem;
 }
-h2 {
-  font: size 60px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(192, 53, 83);
-  text-align: center;
+
+h3 {
+  color: chocolate;
 }
-.centrar {
-  text-align: center;
-  color: white;
-  font-size: 20px;
-}
-h5 {
-  color: white;
-  text-align: center;
-}
+
 table,
 th,
 td {
   border: 3px solid rgb(248, 244, 244);
   border-collapse: collapse;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(68, 59, 59);
-  cursor: default;
   margin: 0 auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-th,
-td {
-  padding: 10px;
-}
+
 table {
   background-color: white;
 }
-h3 {
-  color: chocolate;
+
+th,
+td {
+  padding: 10px;
+  color: black;
 }

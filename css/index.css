@@ -95,3 +95,19 @@ video {
     transform: translateX(-50%);
   }
 }
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0f0f28af;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  margin: 1rem;
+  height: 1.5rem;
+}
